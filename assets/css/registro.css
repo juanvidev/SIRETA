@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;800&family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+.fondo {
+    width: 100%;
+    height: 100vh;
+    background-image: url("http://giovannyjb.tonohost.com/paisaje.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.overlay-img {
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background: rgba(92, 255, 154, 0.5);
+    background: -moz-linear-gradient(top, rgba(92, 255, 154, 0.5) 0%, rgba(53, 201, 116, 0.5) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(92, 255, 154, 0.5)), color-stop(100%, rgba(53, 201, 116, 0.5)));
+    background: -webkit-linear-gradient(top, rgba(92, 255, 154, 0.5) 0%, rgba(53, 201, 116, 0.5) 100%);
+    background: -o-linear-gradient(top, rgba(92, 255, 154, 0.5) 0%, rgba(53, 201, 116, 0.5) 100%);
+    background: -ms-linear-gradient(top, rgba(92, 255, 154, 0.5) 0%, rgba(53, 201, 116, 0.5) 100%);
+    background: linear-gradient(to bottom, rgba(92, 255, 154, 0.5) 0%, rgba(53, 201, 116, 0.5) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#5cff9a', endColorstr='#35c974', GradientType=0);
+    display: flex;
+}
+
+.cajaP {
+    margin: 0;
+    width: 80%;
+    display: flex;
+    height: 80%;
+    background-color: aliceblue;
+}
+
+.cajacontent {
+    width: 70%;
+    position: relative;
+    background-color: white;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#hoja1 {
+    position: absolute;
+    right: 0;
+    top: -8px;
+    width: 150px;
+    height: 150px;
+    opacity: 0.5;
+    transform: rotate(180deg);
+}
+
+#hoja2 {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 0;
+    opacity: 0.5;
+    bottom: -10px;
+}
+
+.content_header {
+    padding-top: 10px;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.content_header>label {
+    margin: auto;
+    color: #009688;
+    margin: auto;
+    font-size: 2.5vw;
+    font-weight: 900;
+    font-family: 'Raleway', sans-serif;
+}
+
+.content_header>p {
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4vw;
+}
+
+.content_header p>span {
+    color: #55ce4d;
+}
+
+.content_body {
+    flex: 1;
+    width: 100%;
+    display: flex;
+}
+
+.body_inputs {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.inputdatos {
+    margin: 10px auto;
+    width: 80%;
+    height: 46px;
+    max-height: 40px;
+    background-color: #f5f5f5;
+    border-radius: .2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #616161;
+}
+
+.inputdatos>input {
+    border: none;
+    margin-left: 5px;
+    height: 100%;
+    background-color: #f5f5f5;
+    font-size: 1vw;
+    outline: none;
+    font-family: 'Raleway', sans-serif;
+    color: #616161;
+}
+
+.inputdatos>i {
+    margin: auto 15px;
+}
+
+#dropdownMenuButton {
+    border: none !important;
+    background-color: #f5f5f5 !important;
+    color: #616161 !important;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    outline: none;
+    box-shadow: none !important;
+    font-size: 1vw;
+}
+
+.content_footer {
+    width: 100%;
+    height: 20%;
+}
+
+.cajatitulo {
+    flex: 1;
+    background-color: #55ce4d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.cajatitulo>i {
+    font-size: 117px;
+    color: #009688;
+}
+
+.cajatitulo>h1 {
+    color: white;
+    margin: 0 auto;
+    font-size: 4.5vw;
+    font-weight: 900;
+    font-family: 'Raleway', sans-serif;
+}
+
+@media screen and (max-width:1200px) {
+    .cajatitulo {
+        display: none;
+    }
+    .cajacontent {
+        width: 100%;
+    }
+    .content_body {
+        flex-direction: column;
+    }
+    .body_inputs {
+        z-index: 1;
+    }
+    .content_footer {
+        z-index: 1;
+    }
+    .inputdatos>input {
+        font-size: 2vw;
+    }
+    .dropdown-toggle {
+        font-size: 2vw !important;
+    }
+    .content_header>label {
+        font-size: 6vw;
+        z-index: 1;
+    }
+    .content_header>p {
+        font-size: 3vw;
+        z-index: 1;
+    }
+}
+
+@media screen and (min-width:10px) and (max-width:228px) {
+    .body_inputs {}
+    .cajaP {
+        height: 50%;
+    }
+    .fondo {
+        width: 225px;
+        height: 702px;
+    }
+    .fondo,
+    .overlay-img {
+        height: 3000px;
+    }
+}

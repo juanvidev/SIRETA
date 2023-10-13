@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;800&family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+* {
+    margin: 0;
+}
+
+body {
+    background: transparent !important;
+}
+
+.slider {
+    width: 100%;
+    overflow: hidden;
+}
+
+.item_slide {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    background: url(/SIRETA/assets/img/Baner1.png) no-repeat center;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+}
+
+.text_itemP {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    float: right;
+}
+
+.text_headerP {
+    width: 100%;
+    height: 30%;
+}
+
+.text_headerP {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.2vw;
+    line-height: 40px;
+    font-weight: 900;
+    color: #616161;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+}
+
+.text_bodyP {
+    width: 100%;
+    height: 50%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.text_bodyP>h1 {
+    margin-bottom: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 7vw;
+    color: #55ce4d;
+    font-weight: 900;
+}
+
+.text_bodyP h1>strong {
+    color: #424242;
+}
+
+.text_bodyP>p {
+    font-size: 1.7vw;
+    font-family: 'Roboto', sans-serif;
+    color: #424242;
+}
+
+.text_bodyP p>span {
+    font-weight: bold;
+}
+
+.text_footerP {
+    flex: 1;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.text_footerP>button {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    border: none;
+    background-color: #a06cfd;
+    border-radius: .5em;
+    padding: 20px 50px;
+}
+
+.item_slideS {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-image: url(/SIRETA/assets/img/Baner4.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.text_itemS {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.itemSbody,
+.itemSheader {
+    flex: 1;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.itemSheader>h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    color: #616161;
+    margin-bottom: 20px;
+}
+
+.itemSbody>h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 70px;
+    color: #2196f3;
+    margin-bottom: 20px;
+}
+
+.img_itemS {
+    flex: 1;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.img_itemS>button,
+.steps_titles>button {
+    right: 20px;
+    position: absolute;
+    bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    border: none;
+    background-color: #a06cfd;
+    border-radius: .5em;
+    padding: 20px 50px;
+}
+
+.items_content_img {
+    flex: 1;
+    justify-content: center;
+    padding: 20px;
+    display: flex;
+}
+
+.items_content_img>img {
+    border-radius: .5em;
+    max-width: 800px;
+    box-shadow: 0 1px 2px 1px rgba(0, 0, 0, .2);
+}
+
+.item_steps {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-image: url(/SIRETA/assets/img/Baner2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.steps_titles {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.step_title {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.step_title>h1 {
+    font-size: 70px;
+    font-weight: 900;
+    display: flex;
+    color: whitesmoke;
+}
+
+.step_title h1>div {
+    background-color: #fff;
+    width: 80px;
+    height: 80px;
+    color: #56fd95;
+    border-radius: 50%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.step_title h1 div>h2 {
+    font-size: 80px;
+    margin: 0 auto;
+}
+
+.step_text {
+    flex: 1;
+    font-family: 'Roboto', sans-serif;
+}
+
+.step_text>h1 {
+    color: #424242;
+    font-size: 30px;
+}

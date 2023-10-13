@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.login-sect {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.fondo-login {
+    height: 100vh;
+    background-image: url("http://giovannyjb.tonohost.com/paisaje.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    position: relative;
+}
+
+.overlay-img {
+    height: 100vh;
+    background: rgb(92, 255, 154);
+    background: linear-gradient(0deg, rgba(92, 255, 154, 0.36458333333333337) 38%, rgba(53, 201, 116, 0.4738270308123249) 93%);
+    display: flex;
+}
+
+.caja_textoP {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja_textoP>h1 {
+    color: #424242;
+    margin-bottom: 120px;
+    padding-left: 150px;
+    font-size: 4vw;
+    font-weight: 900;
+    font-family: 'Raleway', sans-serif;
+}
+
+.caja_contenido {
+    width: 100%;
+    height: 100%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenido {
+    width: 347px;
+    height: 430px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+#hoja1 {
+    position: absolute;
+    right: 0;
+    top: -8px;
+    background-image: url(/SIRETA/assets/img/hojas.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 160px;
+    height: 160px;
+    opacity: 0.5;
+    transform: rotate(180deg);
+}
+
+#hoja2 {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 0;
+    background-image: url(/SIRETA/assets/img/hojas.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5;
+    bottom: -10px;
+}
+
+.contenido_header {
+    display: flex;
+    width: 100%;
+    height: 35%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.contenido_header>label {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    color: #009688;
+    font-size: 23px;
+}
+
+.contenido_header>p {
+    margin-top: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+.contenido_header p>a {
+    color: #55ce4d;
+}
+
+.contenido_body {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 35%;
+    flex-direction: column;
+}
+
+.username-input::placeholder {
+    font-size: 12px;
+    font-weight: bold;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #616161 !important;
+    font-weight: bold;
+}
+
+.password-input::placeholder {
+    font-size: 12px;
+    font-weight: bold;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #616161 !important;
+    font-weight: bold;
+}
+
+.cont_inputs .username-input {
+    width: 80%;
+    text-align: left;
+    border: none;
+    padding: 0 !important;
+    font-size: 17px;
+    height: 54px !important;
+    color: #616161;
+    background: #e7e7e7;
+    border-radius: 0 .2em .2em 0;
+    outline: none;
+}
+
+span.eye {
+    height: 54px !important;
+    width: 65%;
+    background: #e7e7e7;
+    border-radius: 0 .2em .2em 0;
+    outline: none;
+    color: #616161;
+}
+
+.cont_inputs .password-input {
+    text-align: left;
+    border: none;
+    font-size: 17px;
+    color: #616161;
+    padding: 0 !important;
+    height: 54px !important;
+    width: 65%;
+    background: #e7e7e7;
+    border-radius: 0 .2em .2em 0;
+    outline: none;
+}
+
+.cont_inputs>i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #616161;
+    height: 54px;
+    width: 20%;
+    background: #e7e7e7;
+    border-radius: .2em 0 0 .2em;
+}
+
+.cont_inputs {
+    width: 260px;
+    text-align: left;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.4em;
+    z-index: 1;
+}
+
+.contenido_footer {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.btn.btn-primary {
+    font-weight: bold;
+    box-shadow: none !important;
+    padding: 12px 18px;
+    margin-bottom: 25px;
+}
+
+span.eye {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #e7e7e7;
+    visibility: visible;
+}
+
+#hide1 {
+    display: none;
+}
+
+@media screen and (max-width:992px) {
+    .overlay-img {
+        flex-direction: column;
+    }
+    .caja_textoP {
+        display: none;
+    }
+}
+
+@media screen and (min-width:10px) and (max-width:228px) {
+    .login-sect {
+        width: 225px;
+        height: 702px;
+    }
+    .login-sect,
+    .overlay-img,
+    .fondo {
+        height: 3000px;
+    }
+}
